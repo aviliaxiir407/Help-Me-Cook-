@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90760290515",
+    "firebase_url": "https://help-me-cook.firebaseio.com",
+    "project_id": "help-me-cook",
+    "storage_bucket": "help-me-cook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90760290515:android:9457b3e9346a02fb",
+        "android_client_info": {
+          "package_name": "id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90760290515-s3lrfcr8okki91k3g5nt3jl1piavghae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiGjBCqBvKeGI8pZkD1-ssDNbAidH_oew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

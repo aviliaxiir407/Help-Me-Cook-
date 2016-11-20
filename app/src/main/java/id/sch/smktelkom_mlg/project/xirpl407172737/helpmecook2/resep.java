@@ -4,13 +4,13 @@ package id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2;
  * Created by user_ on 11/8/2016.
  */
 
-public class resep {
+public class Resep {
     //name and address string
     private String namaresep;
     private String bahan;
     private String caramembuat;
 
-    public resep() {
+    public Resep() {
       /*Blank default constructor essential for Firebase*/
     }
     //Getters and setters

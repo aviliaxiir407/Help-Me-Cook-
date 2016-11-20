@@ -1,8 +1,8 @@
 package id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -21,10 +21,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private EditText editTextNamaResep;
-    private EditText editTextBahan;
-    private TextView textViewPersons;
-    private EditText editTextCaraMembuat;
+    private TextView textViewResep;
     private Button buttonSave;
 
     @Override
@@ -34,65 +31,17 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Firebase.setAndroidContext(this);
-
+        textViewResep = (TextView) findViewById(R.id.textViewResep);
         buttonSave = (Button) findViewById(R.id.buttonSave);
-        editTextNamaResep = (EditText) findViewById(R.id.editTextNamaResep);
-        editTextBahan = (EditText) findViewById(R.id.editTextBahan);
-        textViewPersons = (TextView) findViewById(R.id.textViewPersons);
-        editTextCaraMembuat = (EditText) findViewById(R.id.editTextCaraMembuat);
 
-        //Click Listener for button
-        buttonSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Creating firebase object
-                Firebase ref = new Firebase(config.FIREBASE_URL);
+        textViewResep.setText("masi error reading data");
 
-                //Getting values to store
-                String namaresep = editTextNamaResep.getText().toString().trim();
-                String bahan = editTextBahan.getText().toString().trim();
-                String caramembuat = editTextCaraMembuat.getText().toString().trim();
-
-                //Creating resep object
-                final resep resep = new resep();
-
-                //Adding values
-                resep.setName(namaresep);
-                resep.setBahan(bahan);
-                resep.setCara(caramembuat);
-
-                //Storing values to firebase
-
-                ref.child("resep").push().setValue(resep);
-                ref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-
-                        resep resep = dataSnapshot.getValue(resep.class);
-
-                        //Adding it to a string
-                        String string = "Nama Resep: " + resep.getName() + "\nBahan: " + resep.getBahan() + "\nCara Membuat: " + resep.getCara() + "\n\n";
-
-                        //Displaying it on textview
-                        textViewPersons.setText(string);
-                    }
-
-                    @Override
-                    public void onCancelled(FirebaseError firebaseError) {
-                        System.out.println("The read failed: " + firebaseError.getMessage());
-                    }
-                });
-
-            }
-        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
 

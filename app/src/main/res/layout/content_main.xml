@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,62 +17,6 @@
         tools:context="id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2.MainActivity"
         tools:showIn="@layout/app_bar_main">
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editTextNamaResep"
-            android:layout_alignBottom="@+id/editTextNamaResep"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:text="Nama Resep" />
-
-        <EditText
-            android:id="@+id/editTextNamaResep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="16dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/editTextNamaResep"
-            android:layout_marginTop="28dp"
-            android:text="Bahan" />
-
-
-        <EditText
-            android:id="@+id/editTextBahan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="142dp" />
-
-        <TextView
-            android:id="@+id/caramembuat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/editTextBahan"
-            android:layout_marginTop="28dp"
-            android:text="Cara Membuat" />
-
-
-        <EditText
-            android:id="@+id/editTextCaraMembuat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/buttonSave"
-            android:layout_alignStart="@+id/buttonSave"
-            android:layout_below="@+id/caramembuat"
-            android:layout_marginTop="25dp" />
-
         <TextView
             android:id="@+id/person"
             android:layout_width="match_parent"
@@ -85,7 +29,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewPersons"
+            android:id="@+id/textViewResep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/buttonSave"
@@ -95,15 +39,6 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="42dp" />
 
-        <Button
-            android:id="@+id/buttonSave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/editTextCaraMembuat"
-            android:layout_marginTop="29dp"
-            android:text="Simpan" />
 
     </RelativeLayout>
 </ScrollView>

@@ -5,40 +5,30 @@
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2.MainActivity"
-        tools:showIn="@layout/app_bar_main">
-
-        <TextView
-            android:id="@+id/person"
+<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/buttonSave"
-            android:layout_marginTop="49dp"
-            android:text="Resep"
-            android:textStyle="bold" />
-
+    android:orientation="vertical">
         <TextView
-            android:id="@+id/textViewResep"
+            android:text="    "
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            />
+        <TextView
+            android:text="    "
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"/>
+
+        <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/buttonSave"
-            android:layout_alignStart="@+id/buttonSave"
-            android:layout_below="@+id/person"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="42dp" />
+            android:layout_height="388dp"
+            android:id="@+id/lv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/textView3" />
 
+</LinearLayout>
 
-    </RelativeLayout>
 </ScrollView>

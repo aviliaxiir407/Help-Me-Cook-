@@ -24,7 +24,6 @@ public class Tambah_resep extends AppCompatActivity {
         buttonSave = (Button) findViewById(R.id.buttonSave);
         editTextNamaResep = (EditText) findViewById(R.id.editTextNamaResep);
         editTextBahan = (EditText) findViewById(R.id.editTextBahan);
-        textViewPersons = (TextView) findViewById(R.id.textViewResep);
         editTextCaraMembuat = (EditText) findViewById(R.id.editTextCaraMembuat);
 
         //Click Listener for button

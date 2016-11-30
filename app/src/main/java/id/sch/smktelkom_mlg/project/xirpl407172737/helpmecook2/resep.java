@@ -4,7 +4,7 @@ package id.sch.smktelkom_mlg.project.xirpl407172737.helpmecook2;
  * Created by user_ on 11/8/2016.
  */
 
-public class Resep {
+class Resep {
     //name and address string
     private String namaresep;
     private String bahan;

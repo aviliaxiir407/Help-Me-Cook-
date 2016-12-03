@@ -15,15 +15,17 @@
 ##Gambar nantinya akan berupa link yang sebelumnya sudah diupload di media share seperti firebase storage, 4shared, cloudinary, dll.
 
 
-![Percobaan Memasukkan data](https://cloud.githubusercontent.com/assets/22524037/20860753/7cd6a7ce-b9b2-11e6-89b8-d4f76e576665.jpeg)
-![Hasil Data](https://cloud.githubusercontent.com/assets/22524037/20860754/7d02e6fe-b9b2-11e6-8d27-eb15b028a931.jpeg)
+![Percobaan Memasukkan data](https://cloud.githubusercontent.com/assets/22524037/20860754/7d02e6fe-b9b2-11e6-8d27-eb15b028a931.jpeg)
+
+![Hasil](https://cloud.githubusercontent.com/assets/22524037/20860753/7cd6a7ce-b9b2-11e6-89b8-d4f76e576665.jpeg)
+
 ##Disini tidak muncul gambar, karena url yang dituju tidak ada media.
 
 
 ###Video Aplikasi.
 
 ###Link File Apk dari Aplikasi.
-
+[Help Me Cook!](https://drive.google.com/open?id=0B0pMWDdfL3KVb2prNUxoZWhHUEU)
 
 ###Identitas tiap anggota kelompok :
 
